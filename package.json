@@ -1,8 +1,8 @@
 {
   "name": "employee-managemt-sytm",
   "version": "1.0.0",
-  "description": "<br>",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "console.table": "^0.10.0",
     "express": "^4.17.1",
@@ -11,17 +11,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kpham000/employee-managemt-sytm.git"
-  },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kpham000/employee-managemt-sytm/issues"
-  },
-  "homepage": "https://github.com/kpham000/employee-managemt-sytm#readme"
+  "license": "ISC"
 }
