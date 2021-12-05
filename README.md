@@ -16,3 +16,5 @@ Business owner should be able to view and manage the departments, roles, and emp
 
 
 ## Walkthrough video
+https://watch.screencastify.com/v/ri5hD5EXJUAxa1td36Wz
+

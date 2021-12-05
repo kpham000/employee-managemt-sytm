@@ -45,21 +45,12 @@ async function findRoles() {
 async function findEmployees() {
   return new Promise((resolve, reject) => {
     connection.query(
-      `SELECT 
-      employees.id, 
-      employees.first_name, 
-      employees.last_name,
-      roles.title as job_title, 
-      roles.salary as salary,
-      managers.first_name as manager_first_name,
-      managers.last_name as manager_last_name, 
-      departments.department_name as department_name FROM 
-      employees LEFT JOIN employees managers ON employees.manager_id=managers.id, departments, roles WHERE 
-      employees.role_id=roles.id AND 
-      roles.department_id=departments.id`,
+      `SELECT employees.id, employees.first_name,employees.last_name,roles.title as job_title, roles.salary as salary, managers.first_name as manager_first_name, managers.last_name as manager_last_name, departments.department_name as department_name FROM employees LEFT JOIN employees managers ON employees.manager_id=managers.id, departments, roles WHERE employees.role_id=roles.id AND roles.department_id=departments.id`,
       function (err, results) {
         if (err) reject(err);
-        else resolve(results);
+        else{
+          resolve(results);
+        } 
       }
     );
   });
